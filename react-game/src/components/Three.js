@@ -25,8 +25,8 @@ function MyThree() {
     const geometry1 = new THREE.SphereGeometry(15, 32, 16);
     const material1 = new THREE.MeshBasicMaterial({ color: 0xffff00 });
     const sphere = new THREE.Mesh(geometry1, material1);
-    //scene.add(cube);
-    scene.add(sphere);
+    scene.add(cube);
+    //scene.add(sphere);
     camera.position.z = 5;
     var animate = function () {
       requestAnimationFrame(animate);
@@ -34,7 +34,7 @@ function MyThree() {
       cube.rotation.y += 0.01;
       renderer.render(scene, camera);
     };
-    animate();
+    //animate();
   }, []);
   return <div ref={refContainer}></div>;
 }
