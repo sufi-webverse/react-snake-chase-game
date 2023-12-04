@@ -37,18 +37,14 @@
   }
 }
 
+#canvas {
+  position: relative;
+  background-color: #ccddcc;
+  margin: 1em auto;
+}
 .ball {
-  width: 20px;
-  height: 20px;
+  background-color: black;
+  position: absolute;
+  display: inline-block;
   border-radius: 50%;
-  background: linear-gradient(teal, #000);
-}
-
-.ball {
-  display: block;
-  transition: all 2s;
-}
-
-.ball-holder:hover .ball {
-  transform: translateX(calc(100vw - 80px)) rotate(360deg);
 }

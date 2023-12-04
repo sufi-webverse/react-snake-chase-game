@@ -1,12 +1,12 @@
 import logo from "./logo.svg";
 import "./App.css";
 
-import CollisionObjects from "./components/CollisionObjects";
+import BouncingBalls from "./components/BouncingBalls";
 function App() {
   return (
     <div className="">
-      <div className="ball-holder">
-        <div className="ball"></div>
+      <div className="">
+        <BouncingBalls />
       </div>
     </div>
   );
