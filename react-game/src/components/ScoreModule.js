@@ -2,8 +2,10 @@ import "../Game.css";
 
 function ScoreModule(){
     return (
-        <div className="scoreBoard">
-            Game Over
+        <div className="scoreBoardContainer">
+            <div className="scoreBoard">
+            <h1 className="scoreBoardText">Game Over!!!</h1>
+        </div>
         </div>
     );
 }
