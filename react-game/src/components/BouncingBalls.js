@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-function BouncingBalls() {
+function BouncingBalls(props) {
   const canvasRef = useRef(null);
 
   const draw = (ctx, frameCount) => {
