@@ -1,23 +1,28 @@
-.scoreBoardContainer{
+.score-board-container{
     display: flex;
     justify-content: center;
+    
 }
 
-.scoreBoard{
+.score-board{
     height: 300px;
     width: 500px;
     background-color: rgb(40, 144, 40);
     border-radius: 50px;
     border:5px solid black;
-    display: flex;
-    justify-content: center;
     
+    animation: blink 1s linear infinite;
    
 }
 
-.scoreBoardText {
+.score-board-text {
     font-size: 80px;
     color: white; 
-    display: flex;
-    align-items: center;
+    text-align: center;
 }
+
+@keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+    }
