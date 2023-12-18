@@ -1,0 +1,36 @@
+.score-board-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.score-board{
+    height: 300px;
+    width: 500px;
+    background-color: rgb(40, 144, 40);
+    border-radius: 50px;
+    border:5px solid black;
+    box-shadow: 15px 15px 8px rgb(236, 233, 233);
+    animation: blink 1s linear infinite;
+   
+}
+
+.score-board-text {
+    font-size: 80px;
+    color: white; 
+    text-align: center;
+}
+
+.score-board-img {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    bottom: 430px;
+    
+}
+
+@keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+    }
